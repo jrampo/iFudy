@@ -33,7 +33,7 @@ const Home = () => {
       <header className="banner">
         <img src={Banner} alt="banner" />
         <div>
-          <h1>RESTAURANT</h1>
+          <h1>RESTAURANTO</h1>
           <p>
             De pratos clássicos a criações surpreendentes, nosso cardápio é um
             requinte de sabores refinados.
