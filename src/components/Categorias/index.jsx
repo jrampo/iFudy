@@ -24,7 +24,7 @@ const Categorias = ({ handleFiltro, botaoClicado }) => {
 
         <button className={botaoClicado === "Carnes" ? "acenderBtn" : "apagarBtn"}
           onClick={() => handleFiltro("Carnes")}>
-          <img src={icone3} alt="ícone" />Carnes
+          <img src={icone3} alt="íconeee" />Carnes
         </button>
         <button className={botaoClicado === "Bebidas" ? "acenderBtn" : "apagarBtn"}
           onClick={() => handleFiltro("Bebidas")}>
