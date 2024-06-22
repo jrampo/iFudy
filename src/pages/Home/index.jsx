@@ -1,6 +1,6 @@
 import "./style.css";
-import Banner from "../../Assets/banner.png";
 import { useState } from "react";
+
 import {
   filtrarProdutos,
   buscarProduto,
@@ -18,7 +18,8 @@ const Home = () => {
 
   const handleBusca = (textoDigitado) => {
     setTextoBuscaDigitado(textoDigitado);
-    textoDigitado.length >= 3 && setDadosFiltrados(buscarProduto(textoDigitado));
+    textoDigitado.length >= 3 &&
+      setDadosFiltrados(buscarProduto(textoDigitado));
     setBotaoClicado("");
   };
 
@@ -31,9 +32,8 @@ const Home = () => {
   return (
     <div>
       <header className="banner">
-        <img src={Banner} alt="banner" />
         <div>
-          <h1>RESTAURANTO</h1>
+          <h1>Restaurant-to'</h1>
           <p>
             De pratos clássicos a criações surpreendentes, nosso cardápio é um
             requinte de sabores refinados.
@@ -58,7 +58,6 @@ const Home = () => {
               <Cards key={produto.id} produto={produto} />
             ))}
           </div>
-
         </section>
       </main>
     </div>
